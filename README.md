@@ -10,6 +10,8 @@ yeelink致力于打造简洁高效的物联网接入解决方案。通过提供�
 
 项目地址：https://github.com/dukai/yeelink_reference_guide
 
+查看地址：http://dukai.github.io/yeelink_reference_guide/
+
 
 ## 我们能够提供
 
