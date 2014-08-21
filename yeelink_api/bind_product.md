@@ -1,4 +1,4 @@
-# Bind Product
+# 绑定产品 Bind Product
 
 绑定并激活产品终端设备
 

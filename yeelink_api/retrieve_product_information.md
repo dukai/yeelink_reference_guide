@@ -1,4 +1,4 @@
-# Retrieve Product Information
+# 获取产品信息 Retrieve Product Information
 
 查看产品设备的信息
 

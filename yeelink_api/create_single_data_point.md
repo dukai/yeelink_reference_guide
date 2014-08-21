@@ -1,4 +1,4 @@
-# create single data point
+# 创建单个数据点 create single data point
 
 为传感器创建一个数据点
 
@@ -17,7 +17,7 @@
 
 | 字段 | 类型 | 可为空 | 备注 |
 | -- | -- | -- | -- |
-| timestamp | string | 否 | 时间，可为空，本值为空时会自动生成当前时间 |
+| timestamp | string | 是 | 时间，可为空，本值为空时会自动生成当前时间 |
 | value | float | 否 | 值 |
 
 ### GPS型传感器

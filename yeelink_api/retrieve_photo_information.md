@@ -1,4 +1,6 @@
-# Retrieve Photo Information
+# 获取图片信息 Retrieve Photo Information
+
+通过本接口可以获取图片的相关信息，比如尺寸，大小，类型和地址等。
 
 ## GET
 

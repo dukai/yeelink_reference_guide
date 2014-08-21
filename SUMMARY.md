@@ -33,4 +33,5 @@
        * [获取产品信息 Retrieve Product Information](yeelink_api/retrieve_product_information.md)
        * [绑定产品 Bind Product](yeelink_api/bind_product.md)
        * [产品反馈 Feedback](yeelink_api/feedback.md)
+* [yeelink MQTT API](yeelink_mqtt_api/README)
 
