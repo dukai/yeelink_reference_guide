@@ -16,6 +16,8 @@
         
     
     
+    <meta name="author" content="dukai">
+    
     
     <link rel="next" href="../yeelink_api/delete_data_point.html" />
     
@@ -32,12 +34,12 @@
 
 
         
-    <div class="book"  data-level="1.4.3" data-basepath=".." data-revision="1408526243146">
+    <div class="book" data-github="dukai/yeelink_reference_guide" data-level="1.4.3" data-basepath=".." data-revision="1408587192678">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
     
-    <a href="https://github.com/null" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    <a href="https://github.com/dukai/yeelink_reference_guide" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
     
     <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
     <span id="font-settings-wrapper">
@@ -96,13 +98,30 @@
     <ul class="summary">
         
         
-
+        
+        <li>
+            <a href="https://github.com/dukai" target="blank" class="author-link">About the author</a>
+        </li>
         
 
+        
+        
+        <li>
+            <a href="https://github.com/dukai/yeelink_reference_guide/issues" target="blank" class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/dukai/yeelink_reference_guide/edit/master/yeelink_api/retrieve_data_point.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
         
 
 	
 
+        
+        <li class="divider"></li>
         
 
         
@@ -772,10 +791,50 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_23">
+                    <section class="normal" id="section-gitbook_673">
                     
-                        <h1 id="retrieve-data-point">Retrieve Data Point</h1>
-
+                        <h1 id="-retrieve-data-point">获取数据点 Retrieve Data Point</h1>
+<h2 id="get">GET</h2>
+<pre><code>/v1.1/device/&lt;device_id&gt;/sensor/&lt;sensor_id&gt;/datapoint/&lt;key&gt;
+</code></pre><h2 id="">返回值</h2>
+<h3 id="key">key不为空</h3>
+<pre><code>//数值型
+{
+  &quot;value&quot;: 39.4
+}
+//GPS型
+{
+ &quot;value&quot;: {&quot;lat&quot;:35.4321,&quot;lng&quot;:46.3451,&quot;speed&quot;:98.2}
+}
+//泛型
+{
+ &quot;value&quot;: {...}
+}
+//微博型
+{
+  &quot;status_cnt&quot;:0,&quot;follower_cnt&quot;:0,&quot;msg_cnt&quot;:0
+}
+</code></pre><h3 id="key">key为空</h3>
+<pre><code>//数值型
+{
+  &quot;timestamp&quot;:&quot;2012-03-15T16:13:14&quot;,
+  &quot;value&quot;: 39.4,
+  &quot;sensor_id&quot;: 2132,
+  &quot;device_id&quot;: 2234
+}
+//GPS型
+{
+  &quot;timestamp&quot;:&quot;2012-03-15T16:13:14&quot;,
+  &quot;value&quot;: {&quot;lat&quot;:35.4321,&quot;lng&quot;:46.3451,&quot;speed&quot;:98.2}
+}
+//泛型
+{
+  &quot;key&quot;:&quot;e10adc3949ba59abbe56e037f20f884e&quot;,
+  &quot;value&quot;: {...}
+}
+</code></pre><h2 id="">访问授权</h2>
+<pre><code>U-ApiKey: &lt;your_api_key&gt;
+</code></pre>
                     
                     </section>
                 
